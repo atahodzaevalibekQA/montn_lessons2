@@ -55,7 +55,7 @@ Islam = Assasin("Islam", 10, 10, 10, 10)
 
 my_values = ["Assasin", "Mage", "Warrior"]
 
-user_choice = input("Выберите героя: Warrior / Mage / Assassin")
+user_choice = input("Выберите героя: Warrior / Mage / Assasin")
 
 comp_choice = random.choice(my_values)
 
