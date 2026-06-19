@@ -25,8 +25,6 @@ class BankAccount:
         return self.__random_pass()
         
         
-    
-        
 
 #ardager = BankAccount("Ardager", "123122", 1000)
 
@@ -49,6 +47,35 @@ class Dog(Animal):
      
      def make_sound(self):
          return super().make_sound()
+     
+     
+class SendSms(ABC):
+    
+    
+    @abstractmethod
+    def send_otp(self):
+        pass
+    
+    
+class KGSend(SendSms):
+    
+    def request(self, data):
+        pass
+    
+    def send_otp(self):
+        data = ''' 
+        <Phone>+996998998953</Phone>
+        <Text>Ваш кодЖ 12121</Text>
+        '''
+        self.request(data)
+        
+        
+        
+         
+           
+
+
+
 
 
 
